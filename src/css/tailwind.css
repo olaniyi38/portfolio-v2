@@ -1,0 +1,64 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@font-face {
+    font-family: nunito;
+    src: url('/src/assets/fonts/nunito/Nunito-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: source-sans;
+    src: url('/src/assets/fonts/source-sans/SourceSansPro-Bold.ttf');
+}
+@font-face {
+    font-family: raleway;
+    src: url('/src/assets/fonts/raleway/static/Raleway-Bold.ttf');
+}
+/* #121212 */
+/* 
+Background:101010
+headers:f2f2f2
+normal text:aaaaaa
+highlited text:
+button:0465c7
+*/
+body{
+    font-family: nunito;
+    background-color: #101010;
+    color: #aaaaaa;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: raleway;
+    color: #f2f2f2;
+    
+}
+
+.button{
+    @apply relative overflow-hidden mr-8 tracking-wide font-medium  
+     text-white hover:bg-white hover:text-black rounded-full shadow-lg;
+     background: #1262d1;
+     
+}
+
+
+a{
+    display: inline-block;
+   
+}
+span{
+    display: inline-block;
+    transition: all .19s linear;
+}
+span.animated{
+    position: absolute;
+    width: 100%;
+     right: 0;
+     left: 0;
+     margin: 0 auto;
+     top: 100%;
+     
+    
+}
+

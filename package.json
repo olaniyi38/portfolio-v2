@@ -6,12 +6,19 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "framer-motion": "^7.2.1",
+    "gsap": "^3.11.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router": "^6.3.0",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "sass": "^1.54.6",
+    "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "build:css": "npx tailwindcss -i ./src/css/tailwind.css -o ./src/css/styles.css --watch",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -34,5 +41,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "babel-plugin-macros": "^3.1.0",
+    "postcss-cli": "^10.0.0",
+    "tailwindcss": "^3.1.8",
+    "twin.macro": "^2.8.2"
   }
 }
