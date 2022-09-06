@@ -1,4 +1,4 @@
-import { AnimatePresence,motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import Project from '../../components/project/Project'
 import { PROJECTS } from '../../projects'
 import './work.styles.scss'
@@ -13,7 +13,7 @@ const Work = () => {
      key={'projects'}
      className="px-8 pt-4"
      >
-     <h1 className=' pt-6 font-semibold border-b-2 border-[#f2f2f2]'>Featured Projects</h1>
+     <h1 className='text-sm pt-6 font-semibold border-b-2 border-lightGray'>Featured Projects</h1>
        <div className="projects ">
            {
             PROJECTS.map((project)=>{

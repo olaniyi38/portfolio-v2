@@ -6,8 +6,8 @@ const Button = ({children,...otherProps}) => {
     <motion.button whileTap={{scale:0.9}}
       className='button group'
       { ...otherProps }>
-      <span className="group-hover:-translate-y-20 ">{children}</span>
-      <span className="animated group-hover:top-0 ">{children}</span>
+      <span className="relative z-10">{children}</span>
+      {/* <span className="animated group-hover:top-0 group-hover:opacity-100 z-10">{children}</span> */}
 
     </motion.button>
     </>
