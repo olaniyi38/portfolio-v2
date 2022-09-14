@@ -28,14 +28,44 @@ highlited text:#31c9c9
 button:0465c7/#193ed2
 */
 
+.font-clamp-1{
+    font-size: clamp(2.25rem, 6vw + 1rem, 6rem );
+    line-height: 1;
+}
+.font-clamp-15{
+  font-size: clamp(1rem, 3.5vw + .5rem, 3.5rem);
+  line-height: 1;
 
-
+}
+.font-clamp-2{
+    font-size: clamp(1.2rem, 2vw + .5rem, 2rem);
+    line-height: 1;
+}
+.font-clamp-3{
+    font-size: clamp(.9rem, 1vw + .5rem, 1.2rem);
+    line-height: 1rem;
+}
+.pad-1{
+    padding: max(1rem,1.4vw) max(1rem, 4.5vw) ;
+}
+.pad-15{
+    padding:max(5rem, 6.5vw) 0rem max(1rem, 1.5vw) max(1rem, 4.5vw);
+}
+.pad-2{
+    padding: max(2.25rem, 3vw) 0rem max(1rem,3vw) 0rem;
+}
 body {
     font-family: nunito;
     @apply bg-dark text-darkGray;
 
 }
-
+*{
+    cursor: none;
+   
+}
+.cursor{
+    mix-blend-mode: difference;
+}
 h1,
 h2,
 h3,
@@ -55,9 +85,10 @@ li {
     list-style-type: none;
 }
 
+
 .button {
-    @apply relative overflow-hidden mr-8 tracking-wide font-medium 
-    text-white bg-darkBlue hover:text-black rounded-full shadow-lg;
+    @apply relative overflow-hidden tracking-wide font-clamp-3  lg:font-medium 
+    text-white bg-darkBlue  rounded-full shadow-lg;
 
 }
 

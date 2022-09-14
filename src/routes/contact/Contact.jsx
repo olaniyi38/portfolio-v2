@@ -9,10 +9,10 @@ const Contact = () => {
 
         <div className="mt-32 pl-8 md:pl-16 xl:pl-20 mx-auto justify-between">
             <div className="mb-16  lg:mb-32">
-                <p className="mb-4 md:text-xl">Say Hello</p>
+                <p className="mb-4 text-xl">Say Hello</p>
                 <h1 className="transition hover:scale-[.9] hover:text-darkGray">
                   <a href="mailto:sodiqalao38@gmail.com"
-                   className="text-3xl sm:text-5xl lg:text-6xl xl:text-8xl ">
+                   className="font-clamp-15">
                     sodiqalao38@gmail.com
                   </a>
                 </h1>

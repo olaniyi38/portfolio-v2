@@ -3,6 +3,9 @@ import { Outlet, useNavigate } from "react-router"
 import { NavContainer } from './navigation.styles.jsx'
 import { ReactComponent as HamburgerSvg  } from '../../assets/svgs/hamburger.svg'
 import { useState } from 'react'
+import { NavLink } from 'react-router-dom'
+
+import TransitionAnim from '../../components/transition-anim/TransitionAnim.jsx'
 
 const LINKS = [
   'work',
@@ -23,7 +26,7 @@ const Navigation = () => {
         <ul className='hidden  lg:flex justify-between gap-8'>
              {
               LINKS.map((title)=>{ 
-              return <motion.li whileTap={{scale:.9}} className="hover:text-darkCyan text-lg capitalize" onClick={ ()=> navigateTo(`/${title}`) }>{title}</motion.li> 
+              return <NavLink className="hover:text-darkCyan text-lg capitalize" to={title}>{title}</NavLink> 
             })
              }
         </ul>
@@ -46,7 +49,12 @@ const Navigation = () => {
          </ul>
         </div> */}
 
-      <Outlet />
+       <>
+         <TransitionAnim />
+         <Outlet />
+       </>
+ 
+      
     </>
   )
 }

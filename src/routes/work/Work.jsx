@@ -7,23 +7,24 @@ import './work.styles.scss'
 
 const Work = () => {
   return (
-     <motion.div 
-     initial={{ x:100, opacity:0 }}
-     animate={{ x:0, opacity:1 }}
+     <>
+       <motion.div 
+     
      key={'projects'}
-     className="px-8 pt-4"
+     className="pad-1"
      >
      <h1 className='text-sm pt-6 font-semibold border-b-2 border-lightGray'>Featured Projects</h1>
        <div className="projects ">
            {
-            PROJECTS.map((project)=>{
-              const { title, githubLink, siteLink, techs } = project
-              return <Project title={title} githubLink={githubLink} siteLink={siteLink} techs={techs} /> 
+            PROJECTS.map((projectData)=>{
+             
+              return <Project projectData={projectData} /> 
 
             })
            }
        </div>
      </motion.div>
+     </>
   )
 }
 

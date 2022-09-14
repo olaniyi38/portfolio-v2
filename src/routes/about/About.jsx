@@ -12,7 +12,7 @@ const SKILLS = {
 const About = () => {
   return (
     <>
-        <div className="flex flex-col md:flex-row px-8 pt-12 md:pt-16 lg:pt-24 md::pb-8">
+        <div className="flex flex-col md:flex-row px-8 pt-12 md:pt-16 lg:pt-24 md:pb-8 ">
           <div className="flex-1 text-md lg:text-lg">
             <p className="mb-4">
               I'm a front-end developer passionate about building amazing products for clients and hopefully the
