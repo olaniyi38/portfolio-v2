@@ -43,7 +43,7 @@ button:0465c7/#193ed2
 }
 .font-clamp-3{
     font-size: clamp(.9rem, 1vw + .5rem, 1.2rem);
-    line-height: 1rem;
+   
 }
 .pad-1{
     padding: max(1rem,1.4vw) max(1rem, 4.5vw) ;
@@ -59,10 +59,7 @@ body {
     @apply bg-dark text-darkGray;
 
 }
-*{
-    cursor: none;
-   
-}
+
 .cursor{
     mix-blend-mode: difference;
 }
@@ -87,7 +84,7 @@ li {
 
 
 .button {
-    @apply relative overflow-hidden tracking-wide font-clamp-3  lg:font-medium 
+    @apply relative overflow-hidden tracking-wide font-medium 
     text-white bg-darkBlue  rounded-full shadow-lg;
 
 }
@@ -126,30 +123,22 @@ button span.animated{
 
 
 .mobile-nav {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     z-index: 100;
     background: #121212;
     overflow: hidden;
     transition: all .5s ease-in-out;
-    transform: translateX(100vw);
     transform-origin: right;
-}
-
-.mobile-nav.active {
-    transform: translateX(0);
-}
-
-.mobile-nav ul {
-    overflow: hidden;
-    flex-direction: column;
     padding: 6rem 2rem 2rem 2rem;
-
+    display: flex;
+    flex-direction: column;
 }
 
-.mobile-nav li {
-    font-size: 6rem;
+.mobile-nav span {
+    text-align: center;
+    font-size: 3rem;
     margin: 0% 0% 20% 0%;
 
 

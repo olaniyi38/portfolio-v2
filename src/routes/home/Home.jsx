@@ -27,7 +27,7 @@ const Home = () => {
         </div>
         <aside>
           <motion.p initial={{ opacity:0, y:20 }} animate={{opacity:1, y:0}}
-            className='font-clamp-3 max-w-[25rem] lg:max-w-[30rem] rounded-sm mt-16 lg:mt-4 md:ml-auto pr-4 md:px-4  text-lightGray'>
+            className='font-clamp-3 max-w-[25rem] lg:max-w-[30rem] rounded-sm mt-16 lg:mt-4 lg:ml-auto pr-4 md:px-4  text-lightGray'>
             I am a Frontend focused Web Engineer with a focus on developing clean, accessible and intuitive applications
             either for
             web or mobile, and I have an eye for design with a user-driven approach to development.

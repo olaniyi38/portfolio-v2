@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       {/* // <IntroAnim /> */}
-      <CustomCursor />
+      {/* <CustomCursor /> */}
       <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
          <Route path='/' element={ <Navigation /> }>
