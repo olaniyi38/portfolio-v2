@@ -5,7 +5,7 @@ const TransitionAnim = () => {
   return (
     <>
        <motion.div exit={{height:'100vh'}} className='absolute z-[100] inset-0 w-full bg-black origin-bottom '
-       transition={{duration:1}}
+       transition={{duration:0.6,ease:[0.83, 0, 0.17, 1]}}
        initial={{height:'100vh'}} animate={{height:'0vh'}}>
 
        </motion.div>
@@ -14,3 +14,4 @@ const TransitionAnim = () => {
 }
 
 export default TransitionAnim
+
