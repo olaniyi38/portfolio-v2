@@ -1,0 +1,32 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+body{
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+section,footer,nav{
+    padding: clamp(2rem,3vw + .5rem,4rem) clamp(1rem,7vw + .5rem,8rem)   ;
+}
+.margScale{
+    margin: max(8rem,4vw) max(4rem,2vw) ;
+}
+.font-clamp1{
+@apply bg-gray-400
+}
+
+li:hover {
+    color: gray;
+    transition: all .2s ease-in-out;
+}
+
+button:hover{
+    transform: scale(.9);
+    transition: all .2s ease-in-out;
+}
+li{
+    cursor: pointer;
+}

@@ -5,7 +5,7 @@ import './home.styles.scss'
 const Home = () => {
   return (
     <>
-      <motion.div className='pad-15 overflow-hidden'>
+      <motion.div className='pad-15 mt-24 sm:mt-0 overflow-hidden'>
         <div>
           <motion.p initial={{ opacity:0, x:-20 }} animate={{opacity:1, x:0}} className="mb-4 font-medium">
             Hey there! I'm...

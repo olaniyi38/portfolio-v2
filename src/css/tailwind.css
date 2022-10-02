@@ -86,8 +86,9 @@ li {
 .button {
     @apply relative overflow-hidden tracking-wide font-medium 
     text-white bg-darkBlue  rounded-full shadow-lg;
-
+   
 }
+
 
 .button::after {
     content: " ";
@@ -97,7 +98,7 @@ li {
     inset: 0;
     transform: scaleX(0);
     transform-origin: left;
-    transition: all .19s ease-in-out;
+    transition: all .19s cubic-bezier(0.075, 0.82, 0.165, 1);
     @apply rounded-full bg-darkCyan;
 }
 

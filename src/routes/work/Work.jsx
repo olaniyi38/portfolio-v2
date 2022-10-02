@@ -14,11 +14,11 @@ const Work = () => {
      className="pad-1"
      >
      <h1 className='text-sm pt-6 font-semibold border-b-2 border-lightGray'>Featured Projects</h1>
-       <div className="projects ">
+       <div className="projects grid lg:grid-cols-2 gap-8 lg:gap-y-16 py-8">
            {
-            PROJECTS.map((projectData)=>{
+            PROJECTS.map((projectData,index)=>{
              
-              return <Project projectData={projectData} /> 
+              return <Project key={index} projectData={projectData} /> 
 
             })
            }
