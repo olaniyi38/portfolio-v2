@@ -6,7 +6,7 @@ const Contact = () => {
     <>
         {/* email, linkedin, twitter
         */}
-
+        
         <div className="text-center mt-32 mx-auto justify-between">
             <div className="mb-16 ">
                 <p className="mb-8 text-xl">Say Hello</p>
@@ -20,13 +20,13 @@ const Contact = () => {
             </div>
             <div className="flex justify-center flex-wrap gap-4 lg:text-xl ">
                <Button>
-                <a href="http://shorturl.at/gpsTW"  target="blank" className="px-8 py-2">LinkedIN</a >
+                <a href="http://shorturl.at/gpsTW"  target="blank" className="px-8 py-2">LinkedIn</a >
                </Button>
                <Button>
                 <a href="https://github.com/olaniyi38" target="blank"  className="px-8 py-2">Github</a >
                </Button>
                <Button>
-                <a href="" className="px-8 py-2">Twitter</a >
+                <a href="https://twitter.com/Sodiq_Alao38?s=09" className="px-8 py-2">Twitter</a >
                </Button>
                 
             </div>

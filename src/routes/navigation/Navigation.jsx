@@ -30,7 +30,7 @@ const Navigation = () => {
 
   return (
     <>
-      <NavContainer className='py-4 px-6 lg:px-16 lg:py-8'>
+      <NavContainer className='p-6 lg:px-16 lg:py-8'>
         <motion.h1 whileHover={{scale:1.1}} whileTap={{scale:.9}} className="text-2xl cursor-pointer" onClick={()=> navigateTo('/') }>Sodiq</motion.h1>
         <ul className='hidden  sm:flex justify-between gap-8'>
              {
@@ -49,7 +49,7 @@ const Navigation = () => {
           isMobileActive &&
        <motion.div variants={mobileNavAnim} initial="hide" animate="show"
        exit="hide" transition={{staggerChildren:.3,delayChildren:.3}}
-       className={`mobile-nav`}>
+       className='mobile-nav sm:hidden'>
            {
            LINKS.map((title)=>{ 
              return <motion.span whileTap={{scale:.9}} variants={mobileNavAnim} 
